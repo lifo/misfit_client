@@ -1,0 +1,13 @@
+== Example configuration
+
+Wind::Application.middleware.use MisfitClient::Middleware,
+  :email_prefix => "[WIND] ",
+  :exception_recipients => 'pratik@37signals.com',
+  :misfit_url => 'http://0.0.0.0:3000/',
+  :product_identifier => 'wind',
+  :username => 'hello',
+  :password => 'secret'
+
+== Credits
+
+https://github.com/rails/exception_notification - whoever wrote that thing!
