@@ -3,9 +3,9 @@ module MisfitClient
 
     def self.default_ignore_exceptions
       [].tap do |exceptions|
-        exceptions << ActiveRecord::RecordNotFound if defined? ActiveRecord
-        exceptions << AbstractController::ActionNotFound if defined? AbstractController
-        exceptions << ActionController::RoutingError if defined? ActionController
+        # exceptions << ActiveRecord::RecordNotFound if defined? ActiveRecord
+        # exceptions << AbstractController::ActionNotFound if defined? AbstractController
+        # exceptions << ActionController::RoutingError if defined? ActionController
       end
     end
 
